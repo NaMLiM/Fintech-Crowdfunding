@@ -37,10 +37,10 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Crowdfunding</a>
+                        <a class="nav-link" href="/crowdfunding">Crowdfunding</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Donate</a>
