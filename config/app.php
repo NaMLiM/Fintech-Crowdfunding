@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Crowdfunding'),
+    'name' => env('APP_NAME', 'CROWDFUNDING'),
 
     /*
     |--------------------------------------------------------------------------

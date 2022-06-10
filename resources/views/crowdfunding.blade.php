@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
-    <h2>What is Crowdfunding</h2>
-</div>
-<div>
+<div class="container" style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+    <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">WHAT IS CROWDFUNDING ?</h2>
+
     <p>Crowdfunding adalah sebuah bentuk pendanaan untuk mereka yang membutuhkan dana
         dalam pengembangan usahanya, dimana pendanaan tersebut terkumpul dari beberapa orang.
         Pendekatan ini memanfaatkan upaya kolektif dari sejumlah individu secara online menggunakan
