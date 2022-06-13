@@ -47,7 +47,7 @@
                     <a class="nav-link" href="/crowdfunding">Crowdfunding</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Donate</a>
+                    <a class="nav-link" href="/donate">Donate</a>
                 </li>
             </ul>
         </div>
