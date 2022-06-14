@@ -20,6 +20,13 @@ Route::get('/', function () {
 Route::get('/crowdfunding', function () {
     return view('crowdfunding');
 });
+Route::get('/donate', function () {
+    return view('donate');
+});
+Route::get('/yayasan', function () {
+    return view('yayasan');
+});
+
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
