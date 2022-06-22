@@ -1,6 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
 <div class="container" style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
     <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">WHAT IS CROWDFUNDING ?</h2>
 
@@ -15,4 +12,3 @@
         membantu proses penggalangan dana guna pembangunan masjid dan
         panti asuhan di daerah Kamal, Bangkalan, Jawa Timur.</p>
 </div>
-@endsection

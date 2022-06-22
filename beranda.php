@@ -1,9 +1,6 @@
-@extends('layouts.app')
-
-@section('content')
 <div class="container">
 
-    <div><img src="{{ asset('img/logo_n@2x.png') }}" width="20%"  style="margin-left: auto; margin-right: auto; display: block;"></div>
+    <div><img src="src/img/logo_n@2x.png" width="20%" style="margin-left: auto; margin-right: auto; display: block;"></div>
     <br>
     <div>
         <p style="text-align: justify; margin-left: 200px; margin-right: 200px; display: block; line-height: 25px">Website sederhana ini ditujukan untuk membantu pembangunan
@@ -17,6 +14,5 @@
             (nanti ditambah foto masing-masing :v)
         </p>
     </div>
-   
+
 </div>
-@endsection

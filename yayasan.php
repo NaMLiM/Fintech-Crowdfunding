@@ -1,26 +1,32 @@
-@extends('layouts.app')
-
-@section('content')
 <header>
   <style>
-    .card{ margin: 10px ;width: 15rem; }
-    .row{justify-content: center;}
-    .foto_yayasan{width: 500px;}
+    .card {
+      margin: 10px;
+      width: 15rem;
+    }
+
+    .row {
+      justify-content: center;
+    }
+
+    .foto_yayasan {
+      width: 500px;
+    }
   </style>
 </header>
 <div class="container" style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-    <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">WHAT IS CROWDFUNDING ?</h2>
+  <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">WHAT IS CROWDFUNDING ?</h2>
   <div class="row">
     <div class="column">
-      <div class="card"  >
+      <div class="card">
         <img src="{{ asset('pic_yayasan/contoh.jpg') }}" class="card-img-top" alt="...">
         <div class="card-body">
           <p>penjelasan foto</p>
         </div>
       </div>
-      
-      
-      <div class="card"  >
+
+
+      <div class="card">
         <img src="{{ asset('pic_yayasan/contoh.jpg') }}" class="card-img-top" alt="...">
         <div class="card-body">
           <p>penjelasan foto</p>
@@ -42,4 +48,3 @@
   </div>
 
 </div>
-@endsection
