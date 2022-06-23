@@ -36,7 +36,7 @@ if (!isset($_GET['page'])) {
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php?page=beranda">
                     <div class="container">
-                        <img src="src/img/logo.png" width="60px">
+                        <img src="src/img/logo.png" width="50px" style="transform: rotateY(180deg);">
                         Crowdfunding
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
