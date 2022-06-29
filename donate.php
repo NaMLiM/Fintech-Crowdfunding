@@ -17,19 +17,19 @@
   </style>
 </head>
 <div class="container" style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-  <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">DONASI</h2>
+  <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"><b>DONASI</b> </h2>
   <div class="row">
     <?php
     $select = mysqli_query($conn, "select * from yayasan");
     while ($data = mysqli_fetch_array($select)) {
     ?>
-      <div class="card">
+      <div class="card" style="margin-left: 2%; margin: right 2%; border: 10px solid bisque;">
         <img src="admin/upload/<?php echo explode("-", $data['gambar'])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="card-img-top">
         <div class="card-body">
           <h5 class="card-title"><?php echo $data['nama_yayasan'] ?></h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><?php echo $data['alamat_yayasan'] ?></p>
           <a href=" index.php?page=yayasan&id=<?php echo $data['id_yayasan'] ?>" class="btn btn-primary">Lihat</a>
-        </div>
+        </div> 
       </div>
     <?php
     }

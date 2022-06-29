@@ -22,8 +22,47 @@ if (!isset($_GET['page'])) {
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        a{
+	
+	text-decoration: none;
+	font-size: 1.5rem;
+	margin: 20px;
+	padding: 15px, 30px;
+	
+	position: relative;
+	transition: all .4s;
+}
+
+a:hover{
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.24);
+}
+body{
+    background-image: url('src/img/bg.jpg');
+    background-repeat: no-repeat;
+background-size: 100%;
+}
+a::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background:  linear-gradient(to top, #0159ab, #3c1053);
+	z-index: -1;
+	transition: all .4s;
+}
+.navbar-nav a{
+    color: white;
+}
+:hover::before{
+	height: 50%;
+}
+    </style>
 </head>
 
 <body>
