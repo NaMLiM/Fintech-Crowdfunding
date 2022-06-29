@@ -1,5 +1,6 @@
 <!doctype html>
 <?php
+include_once("admin/system/koneksi.php");
 if (!isset($_GET['page'])) {
     $_GET['page'] = 'beranda';
     $page = $_GET['page'];

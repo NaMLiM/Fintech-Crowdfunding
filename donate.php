@@ -1,54 +1,39 @@
-<header>
+<head>
   <style>
     .card {
-      margin: 10px;
+      padding: 10px;
       width: 15rem;
     }
 
     .row {
       justify-content: center;
     }
+
+    .card-img-top {
+      object-fit: cover;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
   </style>
-</header>
+</head>
 <div class="container" style="text-align: center; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
-  <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">WHAT IS CROWDFUNDING ?</h2>
+  <h2 style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">DONASI</h2>
   <div class="row">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href=" index.php?page=yayasan" class="btn btn-primary">Go somewhere</a>
+    <?php
+    $select = mysqli_query($conn, "select * from yayasan");
+    while ($data = mysqli_fetch_array($select)) {
+    ?>
+      <div class="card">
+        <img src="admin/upload/<?php echo explode("-", $data['gambar'])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title"><?php echo $data['nama_yayasan'] ?></h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href=" index.php?page=yayasan&id=<?php echo $data['id_yayasan'] ?>" class="btn btn-primary">Lihat</a>
+        </div>
       </div>
-    </div>
-
-
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="index.php?page=yayasan" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="index.php?page=yayasan" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="index.php?page=yayasan" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
+    <?php
+    }
+    ?>
   </div>
 
 </div>
