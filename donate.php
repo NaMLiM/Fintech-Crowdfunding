@@ -24,12 +24,13 @@
     while ($data = mysqli_fetch_array($select)) {
     ?>
       <div class="card" style="margin-left: 2%; margin: right 2%; border: 10px solid bisque;">
-        <img src="admin/upload/<?php echo explode("-", $data['gambar'])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="card-img-top">
+      <a href=" index.php?page=yayasan&id=<?php echo $data['id_yayasan'] ?>" class="btn btn-primary">
+        <img src="admin/upload/<?php echo explode("-", $data['gambar'])[0]; ?>/gambar/<?php echo explode("-", $data["gambar"])[1] ?>" class="card-img-top"></a>
         <div class="card-body">
           <h5 class="card-title"><?php echo $data['nama_yayasan'] ?></h5>
           <p class="card-text"><?php echo $data['alamat_yayasan'] ?></p>
           <a href=" index.php?page=yayasan&id=<?php echo $data['id_yayasan'] ?>" class="btn btn-primary">Lihat</a>
-        </div> 
+        </div>
       </div>
     <?php
     }

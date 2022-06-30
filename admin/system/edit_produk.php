@@ -1,6 +1,6 @@
 <?php
 
-    include("connection.php");
+    include("koneksi.php");
     session_start();
 
     function deleteDir($folder_path) {
@@ -24,7 +24,7 @@
     }
 
     //get data
-    $id_produk = $_GET["id"];
+    $id_produk = $_GET["id_yayasan"];
     $nama_produk = $_POST["nama_produk"];
     $jenis_produk = $_POST["jenis_produk"];
 

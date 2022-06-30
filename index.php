@@ -43,7 +43,7 @@ a:hover{
 body{
     background-image: url('src/img/bg.jpg');
     background-repeat: no-repeat;
-background-size: 100%;
+    background-size: 100%;
 }
 a::before{
 	content: '';
