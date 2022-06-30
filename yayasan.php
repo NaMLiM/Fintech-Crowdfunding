@@ -44,9 +44,11 @@ while ($data = mysqli_fetch_array($select)) {
             </div>
         </div>
         <div class="col-md-6 text-dark">
-            <div class="mb-5">
-                <h3 class="mb-4"><?php echo $nama_yayasan ?></h3>
-                <?php echo $kondisi; ?>
+            <div class="mb-5" style="font-size: 30px;">
+                <h1 class="mb-4"><?php echo $nama_yayasan ?></h1>
+                <?php echo $kondisi; ?><br><br>
+                <h2>Alamat Yayasan</h2>
+                <h3><?php echo $alamat_yayasan; ?></h3>
             </div>
             <div class="text-dark mt-5">
                 <h3>Bantu Sekarang:</h3>

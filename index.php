@@ -39,6 +39,7 @@ if (!isset($_GET['page'])) {
 
 a:hover{
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.24);
+    color :white;
 }
 body{
     background-image: url('src/img/bg.jpg');
@@ -56,7 +57,7 @@ a::before{
 	z-index: -1;
 	transition: all .4s;
 }
-.navbar-nav a{
+.navbar-nav a, .navbar-nav a:hover, .container-fluid a:hover,.container-fluid a{
     color: white;
 }
 :hover::before{

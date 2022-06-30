@@ -168,33 +168,3 @@ body {
 }
 
 
-a{
-	color: rgb(233, 233, 233);
-	text-decoration: none;
-	font-size: 1.5rem;
-	margin: 20px;
-	padding: 15px, 30px;
-	background: rgba(255, 255, 255, 0.1);
-	position: relative;
-	transition: all .4s;
-}
-
-a:hover{
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.24);
-}
-
-a::before{
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 0%;
-	background:  linear-gradient(to top, #0159ab, #3c1053);
-	z-index: -1;
-	transition: all .4s;
-}
-
-:hover::before{
-	height: 50%;
-}
