@@ -1,1 +1,2 @@
-/admin/upload
+/admin/upload/*
+!/admin/upload/dummy
