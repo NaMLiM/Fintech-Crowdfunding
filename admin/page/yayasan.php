@@ -56,20 +56,6 @@
             </div>
             <form class="form-group" action="" method="POST" id="form_edit" enctype="multipart/form-data">
                 <div class="modal-body" id="edit-modal">
-                    <label for="id">ID</label>
-                    <input type="text" class="form-control" name="id" id="id" aria-describedby="helpId" placeholder="ID" readonly>
-                    <label for="nama_produk2">Nama Produk</label>
-                    <input type="text" class="form-control" name="nama_produk" id="nama_produk2" aria-describedby="helpId" placeholder="Nama Produk">
-                    <label for="jenis_produk1">Jenis Produk</label>
-                    <input type="text" class="form-control" name="jenis_produk" id="jenis_produk1" aria-describedby="helpId" placeholder="Jenis Produk">
-                    <label for="kategori">Kategori</label>
-                    <input type="text" class="form-control" name="kategori" id="kategori" aria-describedby="helpId" placeholder="Kategori">
-                    <label for="gambar">Gambar</label>
-                    <input type="text" class="form-control" name="gambar" id="gambar" aria-describedby="helpId" placeholder="Gambar">
-                    <label for="video">Video</label>
-                    <input type="text" class="form-control" name="video" id="video" aria-describedby="helpId" placeholder="Video">
-                    <label for="spek">Spek</label>
-                    <input type="text" class="form-control" name="spek" id="spek" aria-describedby="helpId" placeholder="Spek">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary mr-auto" data-dismiss="modal">Close</button>

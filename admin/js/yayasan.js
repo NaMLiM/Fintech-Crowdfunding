@@ -12,7 +12,7 @@ for (var i = 1; i < rows.length; i++) {
         // $("#form").attr("action","system/edit-produk.php?page=produk");
         // $("#delete").attr("href","system/delete.php?page=produk&id="+this.cells[0].innerHTML);
         var id_temp = this.cells[0].innerHTML;
-        $("#edit-modal").load("page/ajax-edit-produk.php", { id: id_temp }, function (response, status, request) {
+        $("#edit-modal").load("page/ajax-edit-yayasan.php", { id: id_temp }, function (response, status, request) {
             this; // dom element
         });
         $("#delete").attr("href", "system/delete-yayasan.php?id=" + id_temp);
