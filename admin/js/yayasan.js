@@ -15,8 +15,8 @@ for (var i = 1; i < rows.length; i++) {
         $("#edit-modal").load("page/ajax-edit-produk.php", { id: id_temp }, function (response, status, request) {
             this; // dom element
         });
-        $("#delete").attr("href", "system/delete_produk.php?id=" + id_temp);
-        $("#form_edit").attr("action", "system/edit_produk.php?id=" + id_temp);
+        $("#delete").attr("href", "system/delete-yayasan.php?id=" + id_temp);
+        $("#form_edit").attr("action", "system/edit-yayasan.php?id=" + id_temp);
     });
 }
 
