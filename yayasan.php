@@ -43,16 +43,17 @@ while ($data = mysqli_fetch_array($select)) {
                 </div>
             </div>
         </div>
-        <div class="col-md-6 text-dark">
-            <div class="mb-5" style="font-size: 30px;">
+        <div class="col-md-6 text-dark" >
+            <div class="mb-5" style="font-size: 30px; color: white;">
                 <h1 class="mb-4"><?php echo $nama_yayasan ?></h1>
-                <?php echo $kondisi; ?><br><br>
+                <h3><?php echo $kondisi; ?></h3>
+                
                 <h2>Alamat Yayasan</h2>
                 <h3><?php echo $alamat_yayasan; ?></h3>
             </div>
-            <div class="text-dark mt-5">
-                <h3>Bantu Sekarang:</h3>
-                <a href=""><?php echo $no_rek . " a.n. " . $nama_rek ?></a>
+            <div class="text-dark mt-5" >
+                <h3 style="color: white;">Bantu Sekarang:</h3>
+                <a href=""><?php echo $no_rek . " a.n. " . $nama_rek ?></a> <br><br><br>
             </div>
         </div>
     </div>

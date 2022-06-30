@@ -27,7 +27,7 @@ if (!isset($_GET['page'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <style>
         a{
-	
+	color: wheat;
 	text-decoration: none;
 	font-size: 1.5rem;
 	margin: 20px;
@@ -37,12 +37,16 @@ if (!isset($_GET['page'])) {
 	transition: all .4s;
 }
 
+h3{
+    text-align: justify;
+}
 a:hover{
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.24);
     color :white;
 }
 body{
-    background-image: url('src/img/bg.jpg');
+    background-color: #8d7066;
+    /* background-image: url('src/img/bg.jpg'); */
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -66,13 +70,15 @@ a::before{
     </style>
 </head>
 
+
+
 <body>
-    <div id="app">
+    <div id="app" >
         <nav class="navbar navbar-expand-md " style="background-color: rgba(151, 91, 0, 0.678);">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php?page=beranda">
+                <a class="navbar-brand"style="font-size: 22px" href="index.php?page=beranda">
                     <div class="container">
-                        <img src="src/img/logo.png" width="50px" style="transform: rotateY(180deg);">
+                        <img src="src/img/logo.png" width="70px" style="transform: rotateY(180deg);">
                         Crowdfunding
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -84,9 +90,9 @@ a::before{
         <!-- Left Side Of Navbar -->
         <div class="container">
 
-            <ul class="navbar-nav">
+            <ul class="navbar-nav"style="font-size: 22px">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?page=beranda">Home</a>
+                    <a class="nav-link"   href="index.php?page=beranda">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php?page=crowdfunding">Crowdfunding</a>
@@ -104,10 +110,10 @@ a::before{
         include_once($page . '.php');
         ?>
     </main>
-    </div>
+    </div></body>
     <footer class="bg-black fixed-bottom">
         <p style="color: white; text-align: center">Powered by Kelompok 3 Financial Technology - Sistem Informasi Universitas Trunojoyo Madura</p>
     </footer>
-</body>
+
 
 </html>
